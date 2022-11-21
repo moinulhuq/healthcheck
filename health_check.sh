@@ -1,8 +1,8 @@
 #!/bin/sh
 if [ $(pidof nginx | wc -l) -eq 1 ]; then
-  return 0
+  exit 0
 else
-  return 1
+  exit 1
 fi
 
 # To test inside the pod
