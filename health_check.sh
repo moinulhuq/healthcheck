@@ -1,6 +1,6 @@
 #!/bin/sh
 if [ $(pidof nginx | wc -l) -eq 1 ]; then
-  exit 0; sleep 7;
+  exit 0
 else
   exit 1
 fi
